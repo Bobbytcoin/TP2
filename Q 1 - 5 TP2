@@ -23,3 +23,33 @@ int main() {
     
 
 }
+
+---------------------------------------------------------------------
+
+# Q9
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    int M;
+    char C;
+    cout << "Taille du damier (N) ?" << endl;
+    cin >> N;
+    cout << "Longueur des lignes (M) ?" << endl;
+    cin >> M;
+    cout << "Choisir un caractère" << endl;
+    cin >> C;
+    for (int j = 1; j <= N; j++) { 
+        if (j % 2 == 0) {
+            cout << " ";
+        }
+        
+        for (int i = 1; i <= M / 2; i++) {
+            cout << C;
+        }
+        cout << endl; 
+    }
+    
+
+}
