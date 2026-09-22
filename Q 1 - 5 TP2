@@ -3,12 +3,23 @@ using namespace std;
 
 int main() {
     int N;
-    cout << "Longueur de la ligne" << endl;
-    cin >> N;
+    int M;
     
-    for (int i = 1; i <= N / 2; i++) {
-        cout << "* ";
+    cout << "Taille du damier (N) ?" << endl;
+    cin >> N;
+    cout << "Longueur des lignes (M) ?" << endl;
+    cin >> M;
+    
+    for (int j = 1; j <= N; j++) { 
+        if (j % 2 == 0) {
+            cout << " ";
+        }
+        
+        for (int i = 1; i <= M / 2; i++) {
+            cout << "* ";
+        }
+        cout << endl; 
     }
-    cout << endl; 
-  
+    
+
 }
