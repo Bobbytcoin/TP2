@@ -5,11 +5,11 @@ int main() {
     int N;
     cout << "Saisir la hauteur du triangle" << endl;
     cin >> N;
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= N; i+=2) {
         cout << string(i, '*') << endl;
         
     }
-    for (int j = N-1; j > 0; j--) {
+    for (int j = N-2; j > 0; j-=2) {
         cout << string(j, '*') << endl;
         
     }
