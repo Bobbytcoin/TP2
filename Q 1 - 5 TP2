@@ -1,0 +1,111 @@
+# 1 --------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Saisir un nombre" << endl;
+    cin >> n;
+    
+    cout << string(n,'*') << endl;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    cout << "Saisir la longueur du carré" << endl;
+    cin >> a;
+    cout << "Saisir la largeur du carré" << endl;
+    cin >> b;
+    for (int i = 1; i <= b; i++) {
+        cout << string(a, '*') << endl;
+        }
+    }
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Saisir la hauteur du triangle" << endl;
+    cin >> N;
+    for (int i = 1; i <= N; i++) {
+        cout << string(i, '*') << endl;
+        
+    }
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int N;
+    cout << "Saisir la hauteur du triangle" << endl;
+    cin >> N;
+    for (int i = N; i > 0; i--) {
+        cout << string(i, '*') << endl;
+        
+    }
+}
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Saisir la longueur de la ligne" << endl;
+    cin >> N;
+    
+    cout << '*' << string(N-2, ' ') << '*' << endl;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    int L;
+    cout << "Saisir la longueur du rectangle" << endl;
+    cin >> N;
+    cout << "Saisir la largeur du rectangle" << endl;
+    cin >> L;
+    
+    cout << string(N, '*') << endl; 
+    for (int i = 1; i <= L-2; i++) { 
+        cout << '*' << string(N-2, ' ') << '*' << endl;
+    
+    
+    }
+    cout << string(N, '*') << endl;
+    
+    
+}
+
+
+
+
