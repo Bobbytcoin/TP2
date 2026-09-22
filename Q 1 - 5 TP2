@@ -3,53 +3,16 @@ using namespace std;
 
 int main() {
     int N;
-    int M;
-    
-    cout << "Taille du damier (N) ?" << endl;
+    cout << "Saisir la hauteur du triangle" << endl;
     cin >> N;
-    cout << "Longueur des lignes (M) ?" << endl;
-    cin >> M;
-    
-    for (int j = 1; j <= N; j++) { 
-        if (j % 2 == 0) {
-            cout << " ";
-        }
+    for (int i = 1; i <= N; i++) {
+        cout << string(i, '*') << endl;
         
-        for (int i = 1; i <= M / 2; i++) {
-            cout << "* ";
-        }
-        cout << endl; 
     }
-    
-
+    for (int j = N-1; j > 0; j--) {
+        cout << string(j, '*') << endl;
+        
+    }
 }
 
----------------------------------------------------------------------
 
-# Q9
-#include <iostream>
-using namespace std;
-
-int main() {
-    int N;
-    int M;
-    char C;
-    cout << "Taille du damier (N) ?" << endl;
-    cin >> N;
-    cout << "Longueur des lignes (M) ?" << endl;
-    cin >> M;
-    cout << "Choisir un caractère" << endl;
-    cin >> C;
-    for (int j = 1; j <= N; j++) { 
-        if (j % 2 == 0) {
-            cout << " ";
-        }
-        
-        for (int i = 1; i <= M / 2; i++) {
-            cout << C;
-        }
-        cout << endl; 
-    }
-    
-
-}
