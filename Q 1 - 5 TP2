@@ -2,15 +2,14 @@
 using namespace std;
 
 int main() {
-    int N;
-    cout << "Saisir la hauteur du triangle" << endl;
-    cin >> N;
-    for (int i = 1; i <= N; i+=2) {
-        cout << string(i, '*') << endl;
+
+    for (int i = 1; i <= 3; i++) {
+        cout << string(4, ' ') << '*' << endl;
         
     }
-    for (int j = N-2; j > 0; j-=2) {
-        cout << string(j, '*') << endl;
+    cout << string(9, '*') << endl;
+    for (int i = 1; i <= 3; i++) {
+        cout << string(4, ' ') << '*' << endl;
         
     }
 }
